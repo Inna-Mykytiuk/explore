@@ -56,6 +56,7 @@ const Slider = () => {
       <Swiper
         slidesPerView={1}
         keyboard={true}
+        spaceBetween={-100}
         pagination={{
           clickable: true,
         }}
@@ -63,17 +64,17 @@ const Slider = () => {
         ref={swiperRef}
         initialSlide={activeSlideIndex}
         grabCursor={true}
-        className="pl-[90px] pt-6"
+        // className="pl-[90px] pt-6"
       >
         {places.map((item, index) => (
           <SwiperSlide key={index}>
             <div className="relative flex items-center justify-center w-full h-full">
               <Image
-                width={400}
-                height={500}
+                // width={400}
+                // height={500}
                 src={item.img}
                 alt={item.name}
-                className="object-cover shadow-xl w-[400px] h-[500px] object-center"
+                className="object-cover shadow-xl object-center"
               />
               <div className="text">sample text</div>
             </div>

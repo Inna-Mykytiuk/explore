@@ -70,7 +70,7 @@ const Header = () => {
             </div>
           </div> */}
 
-          <div className="w-1/2 flex flex-col items-end justify-end relative">
+          <div className="w-1/2 flex flex-col justify-end relative">
             <Slider />
 
             <div>Social Icons here</div>
