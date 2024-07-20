@@ -54,9 +54,10 @@ const config: Config = {
         scale: "scale 0.7s ease infinite alternate",
       },
       fontFamily: {
-        comforta: ["Comfortaa", "sans-serif"],
-        contrail: ["Contrail One", "sans-serif"],
-        roboto: ["Roboto", "sans-serif"],
+        bebas: ["Bebas Neue", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+        dancing: ["Dancing Script", "cursive"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
       fontSize: {
         medium: ['28px', '1.28'],
@@ -65,10 +66,14 @@ const config: Config = {
         extraLarge: ['56px', '1.14'],
       },
       colors: {
-        mainBcg: '#f3f3f3',
+        mainBcg: '#001E23',
+        lightBlue: '#4A8087',
+        btnBorder: '#00A189',
+
+        
         dark: '#32323D',
+
         mainBlue: '#1879EA',
-        lightBlue: 'rgb(154 195 243)',
         titleColor: '#cacaca',
         grey: '#5c5c5c',
         backdrop: 'rgba(1, 10, 5, 0.75)',
