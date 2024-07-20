@@ -70,11 +70,11 @@ const Slider = () => {
           <SwiperSlide key={index}>
             <div className="relative flex items-center justify-center w-full h-full">
               <Image
-                // width={400}
-                // height={500}
+                width={400}
+                height={500}
                 src={item.img}
                 alt={item.name}
-                className="object-cover shadow-xl object-center"
+                className="object-cover shadow-xl md:w-[400px] md:h-[500px] object-center"
               />
               <div className="text">sample text</div>
             </div>
