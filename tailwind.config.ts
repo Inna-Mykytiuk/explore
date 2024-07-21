@@ -69,13 +69,10 @@ const config: Config = {
         mainBcg: '#001E23',
         lightBlue: '#4A8087',
         btnBorder: '#00A189',
-
+        titleColor: '#42a8bb',
+        textBlue: '#2FA8B9',
         
-        dark: '#32323D',
 
-        mainBlue: '#1879EA',
-        titleColor: '#cacaca',
-        grey: '#5c5c5c',
         backdrop: 'rgba(1, 10, 5, 0.75)',
         backdropBlue: 'rgba(52, 98, 153, 0.85)',
       },
