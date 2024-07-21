@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 
 import img1 from "../../../public/images/indoVert1.png";
 import img2 from "../../../public/images/thaiVert.png";
-import img3 from "../../../public/images/nepalVert2.png";
+import img3 from "../../../public/images/nepalVert.png";
 
 const Slider = () => {
   const swiperRef = useRef<any>(null);
@@ -52,7 +52,7 @@ const Slider = () => {
   ];
 
   return (
-    <div className="mr-14 shadow-xl">
+    <div className="mr-14">
       <Swiper
         slidesPerView={1}
         keyboard={true}
@@ -73,7 +73,7 @@ const Slider = () => {
                 height={500}
                 src={item.img}
                 alt={item.name}
-                className="object-cover shadow-xl md:w-[400px] md:h-[500px] object-center"
+                className="object-cover md:w-[400px] md:h-[500px] object-center"
               />
               {/* <div className="text">sample text</div> */}
             </div>

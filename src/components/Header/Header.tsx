@@ -35,20 +35,20 @@ const Header = () => {
 
     if (country && title) {
       return (
-        <div>
-          <h1 className="text-[144px] text-white font-montserrat font-[800] leading-[140px]">
+        <>
+          <h1 className="text-[56px] leading-[56px] md:text-[96px] xl:text-[140px] text-white font-montserrat font-[800] md:leading-[84px] xl:leading-[140px]">
             Explore <br />
             <span className={`country ${country}`} data-country={country}>
               {country}
             </span>
           </h1>
-          <p className="text-white mt-[-70] w-[95%] font-semibold">
+          <p className="text-white mt-[-10px] md:mt-[-40px] w-[95%] font-semibold">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
             veniam accusamus doloribus, quidem sequi recusandae omnis facere,
             debitis ad soluta doloremque. Sed eveniet magnam minima omnis
             sapiente? Neque, incidunt asperiores?
           </p>
-        </div>
+        </>
       );
     }
 
@@ -58,16 +58,20 @@ const Header = () => {
   const classChange = handleClass(activeSlideIndex);
 
   return (
-    <section className="w-full">
+    <section className="w-full mt-[50px] md:mt-[40px] xl:mt-[100px]">
       <div className="container">
-        <div className="flex items-center justify-between mt-[40px]">
+        <div className="flex flex-col xl:flex-row xl:items-center justify-between">
           {/*text content*/}
-          <div className="max-w-[800px]">
+          <div className="max-w-[600px] xxl:max-w-[800px]">
             {classChange}
-            <div className="mt-[100px] flex gap-12">
+            <div className="mt-8 mb-8 xl:mt-[100px] flex gap-12">
               <button
                 type="button"
-                className="border-2 border-btnBorder px-6 py-2 font-semibold text-btnBorder hover:text-white hover:border-white transition duration-300 ease-in-out"
+                className="border-1 px-6 py-2 font-semibold  hover:border-white transition duration-300 ease-in-out
+                
+                
+                inline-block text-center no-underline  max-w-full cursor-pointer border border-white text-white bg-transparent hover:shadow-[4px_4px_30px_0px_rgba(207,188,185,0.9)]
+                "
               >
                 Book Now
               </button>
@@ -78,7 +82,7 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="w-1/3 flex flex-col items-end justify-end relative">
+          <div className="w-1/3 flex flex-col items-end justify-end relative smOnly:left-[220px] mdOnly:left-[320px]">
             <Slider />
             <div>Social Icons here</div>
           </div>

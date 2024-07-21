@@ -19,7 +19,7 @@ export default function RootLayout({
     <AppContext>
       <html lang="en">
         <body className={montserrat.className}>
-          <main className="overflow-hidden flex flex-col min-h-screen bg-mainBcg">
+          <main className="flex flex-col min-h-screen bg-mainBcg">
             {children}
           </main>
         </body>

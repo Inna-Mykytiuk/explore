@@ -35,28 +35,31 @@ const Navbar = () => {
           <a href="/" className="text-white">
             LOGO
           </a>
-          <div className="bg-lightBlue bg-opacity-[70%] py-3 px-8 rounded-[40px]">
-            <ul className="flex text-white text-[17px] font-bold uppercase gap-10">
-              {navLinks.map((link) => (
-                <li key={link.id}>
-                  <Link
-                    to={link.url}
-                    smooth={true}
-                    spy={true}
-                    href="#"
-                    ignoreCancelEvents={true}
-                    className=" relative inline-block
+
+          <ul
+            className="hidden md:flex text-white text-[17px] font-bold uppercase gap-10
+            bg-lightBlue bg-opacity-[70%] py-3 px-8 rounded-[40px]
+            "
+          >
+            {navLinks.map((link) => (
+              <li key={link.id}>
+                <Link
+                  to={link.url}
+                  smooth={true}
+                  spy={true}
+                  href="#"
+                  ignoreCancelEvents={true}
+                  className=" relative inline-block
                     transform duration-75 ease-in-out cursor-pointer
                     after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 after:ease-in-out
                     hover:after:w-full
                     "
-                  >
-                    {link.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+                >
+                  {link.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </nav>
