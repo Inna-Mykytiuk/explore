@@ -31,10 +31,10 @@ const Main = () => {
   const classChange = handleClass(activeSlideIndex);
 
   return (
-    <div className={`${classChange} h-[1080px] xl:h-screen`} id="home">
+    <section className={`${classChange} h-[1080px] xl:h-screen`} id="home">
       <Navbar />
       <Header />
-    </div>
+    </section>
   );
 };
 

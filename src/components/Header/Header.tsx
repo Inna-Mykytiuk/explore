@@ -77,7 +77,7 @@ const Header = () => {
               </button>
               <button type="button" className="flex items-center gap-2">
                 <FaYoutube className=" text-[40px] text-red-700" />
-                <span className="text-white">Watch Videos like this</span>
+                <span className="text-white">Watch Videos</span>
               </button>
             </div>
           </div>
