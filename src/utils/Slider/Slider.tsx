@@ -64,7 +64,6 @@ const Slider = () => {
         ref={swiperRef}
         initialSlide={activeSlideIndex}
         grabCursor={true}
-        // className="pl-[90px] pt-6"
       >
         {places.map((item, index) => (
           <SwiperSlide key={index}>
@@ -76,7 +75,7 @@ const Slider = () => {
                 alt={item.name}
                 className="object-cover shadow-xl md:w-[400px] md:h-[500px] object-center"
               />
-              <div className="text">sample text</div>
+              {/* <div className="text">sample text</div> */}
             </div>
           </SwiperSlide>
         ))}

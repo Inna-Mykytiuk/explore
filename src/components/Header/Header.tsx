@@ -4,6 +4,7 @@ import React, { useContext } from "react";
 import "./Header.css";
 import { FaYoutube } from "react-icons/fa";
 import Slider from "@/utils/Slider/Slider";
+import { MyContext } from "@/context/AppContext";
 
 const contentData = [
   {
@@ -21,58 +22,64 @@ const contentData = [
 ];
 
 const Header = () => {
-  // const { activeSlideIndex } = useContext();
+  const context = useContext(MyContext);
 
-  // const handleClass = (activeSlideIndex: number) => {
-  //   const { country, title } = contentData[activeSlideIndex] || {};
+  if (!context) {
+    return null;
+  }
 
-  //   if (country && title) {
-  //     return (
-  //       <div>
-  //         <h1>
-  //           Explore <br />
-  //           <span className={`country ${country}`} data-country={country}>
-  //             {country}
-  //           </span>
-  //         </h1>
-  //         <p className="text-white mt-[-70] p-2 w-[95%] font-semibold">
-  //           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
-  //           sed dolor provident hic, delectus minima saepe laudantium dolore
-  //           fugiat? Corrupti!
-  //         </p>
-  //       </div>
-  //     );
-  //   }
+  const { activeSlideIndex } = context;
 
-  //   return null;
-  // };
+  const handleClass = (activeSlideIndex: number) => {
+    const { country, title } = contentData[activeSlideIndex] || {};
 
-  // const classChange = handleClass(activeSlideIndex);
+    if (country && title) {
+      return (
+        <div>
+          <h1 className="text-[144px] text-white font-montserrat font-[800] leading-[140px]">
+            Explore <br />
+            <span className={`country ${country}`} data-country={country}>
+              {country}
+            </span>
+          </h1>
+          <p className="text-white mt-[-70] w-[95%] font-semibold">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            veniam accusamus doloribus, quidem sequi recusandae omnis facere,
+            debitis ad soluta doloremque. Sed eveniet magnam minima omnis
+            sapiente? Neque, incidunt asperiores?
+          </p>
+        </div>
+      );
+    }
+
+    return null;
+  };
+
+  const classChange = handleClass(activeSlideIndex);
 
   return (
     <section className="w-full">
       <div className="container">
-        <div className="flex items-center mt-[40px]">
+        <div className="flex items-center justify-between mt-[40px]">
           {/*text content*/}
-          {/* <div className="w-1/2 pl-[140px]">
+          <div className="max-w-[800px]">
             {classChange}
             <div className="mt-[100px] flex gap-12">
               <button
                 type="button"
-                className="border-2 border-btnBorder px-6 py-2 font-semibold text-white hover:text-btnBorder transition duration-300 ease-in-out"
+                className="border-2 border-btnBorder px-6 py-2 font-semibold text-btnBorder hover:text-white hover:border-white transition duration-300 ease-in-out"
               >
                 Book Now
               </button>
-              <button type="button">
-                <FaYoutube />
-                Watch Videos like this
+              <button type="button" className="flex items-center gap-2">
+                <FaYoutube className=" text-[40px] text-red-700" />
+                <span className="text-white">Watch Videos like this</span>
               </button>
             </div>
-          </div> */}
+          </div>
 
-          <div className="w-1/2 flex flex-col justify-end relative">
+          <div className="w-1/3 flex flex-col items-end justify-end relative">
             <Slider />
-
             <div>Social Icons here</div>
           </div>
         </div>
