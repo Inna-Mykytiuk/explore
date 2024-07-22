@@ -67,7 +67,7 @@ const Header = () => {
             <div className="mt-8 mb-8 xl:mt-[100px] flex gap-12">
               <button
                 type="button"
-                className="border-1 px-6 py-2 font-semibold  hover:border-white transition duration-300 ease-in-out
+                className="border-1 px-6 py-2 font-semibold  hover:border-white transition-all duration-300 ease-in-out
                 
                 
                 inline-block text-center no-underline  max-w-full cursor-pointer border border-white text-white bg-transparent hover:shadow-[4px_4px_30px_0px_rgba(207,188,185,0.9)]
@@ -84,7 +84,7 @@ const Header = () => {
 
           <div className="w-1/3 flex flex-col items-end justify-end relative smOnly:left-[220px] mdOnly:left-[320px]">
             <Slider />
-            <div>Social Icons here</div>
+            {/* <div>Social Icons here</div> */}
           </div>
         </div>
       </div>

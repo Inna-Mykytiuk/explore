@@ -10,3 +10,9 @@
     text-wrap: balance;
   }
 }
+
+.verticalText {
+  writing-mode: vertical-rl;
+  rotate: 180deg;
+  text-orientation: mixed;
+}

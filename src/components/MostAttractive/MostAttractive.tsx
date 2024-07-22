@@ -61,8 +61,8 @@ const MostAttractive = () => {
       before:hidden sm:before:block
       before:w-[350px] before:h-[300px] 
       xl:before:w-[450px] xl:before:h-[400px] 
-      before:top-[600px] xl:before:top-[450px]
-      before:bg-mandalaLeft before:left-[-90px]  before:z-10
+      before:top-[600px] 
+      before:bg-mandalaLeft before:left-[-150px]  before:z-10
       before:bg-cover before:opacity-50
 
       after:content-[''] after:absolute
@@ -71,7 +71,7 @@ const MostAttractive = () => {
       xl:after:w-[450px] xl:after:h-[400px]
       after:top-[-300px] 
       after:bg-mandalaLeft after:right-[-90px]  after:z-10
-      after:bg-cover after:opacity-50
+      after:bg-cover after:opacity-30
       "
       >
         <div className="bg-white w-[1px] h-[750px] flex flex-col justify-around items-center">
