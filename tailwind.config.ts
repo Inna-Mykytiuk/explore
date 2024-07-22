@@ -40,6 +40,9 @@ const config: Config = {
         lines: `url(/images/elements/lines1.png)`,
         linesKayak: `url(/images/elements/lines6.png)`,
         sea: `url(/images/water/whirpool4.png)`,
+
+        mandalaLeft: `url(/pictures/mandala11.png)`,
+        mandalaRight: `url(/pictures/mandala22.png)`,
       },
       content: {
         line: `url(/images/elements/roundedLine.png)`,

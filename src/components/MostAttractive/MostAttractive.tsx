@@ -6,32 +6,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import { MyContext } from "@/context/AppContext";
-
-import img1 from "../../../public/set/indonesia/indoBgLeft.png";
-import img2 from "../../../public/set/thai/1.jpg";
-import img3 from "../../../public/set/nepal/1.jpg";
-
-import img4 from "../../../public/set/indonesia/indoBgRight.png";
-import img5 from "../../../public/set/thai/2.jpg";
-import img6 from "../../../public/set/nepal/2.jpg";
-
-import img7 from "../../../public/set/indonesia/indoBglittle.png";
-import img8 from "../../../public/set/thai/3.jpg";
-import img9 from "../../../public/set/nepal/3.jpg";
-
-import img10 from "../../../public/set/indonesia/indoBglittle1.png";
-import img11 from "../../../public/set/thai/4.jpg";
-import img12 from "../../../public/set/nepal/4.jpg";
-
-import img13 from "../../../public/set/indonesia/5.jpg";
-import img14 from "../../../public/set/thai/5.jpg";
-import img15 from "../../../public/set/nepal/5.jpg";
-
-import bgLeft from "../../../public/images/indoBg1.jpg";
-import bgRight from "../../../public/images/nepalBg1.jpg";
-
-import { BsHexagonFill } from "react-icons/bs";
 import HexagonText from "../HexagonText/HexagonText";
+import datas from "@/data/reasonData";
 
 const MostAttractive = () => {
   useEffect(() => {
@@ -45,33 +21,6 @@ const MostAttractive = () => {
   }
 
   const { activeSlideIndex } = context;
-
-  const datas = [
-    {
-      name: "Indonesia",
-      leftImg1: img1,
-      leftImg2: img7,
-      leftImg3: img13,
-      rightImg1: img4,
-      rightImg2: img10,
-    },
-    {
-      name: "Thailand",
-      leftImg1: img2,
-      leftImg2: img8,
-      leftImg3: img14,
-      rightImg1: img5,
-      rightImg2: img11,
-    },
-    {
-      name: "Indonesia",
-      leftImg1: img3,
-      leftImg2: img9,
-      leftImg3: img15,
-      rightImg1: img6,
-      rightImg2: img12,
-    },
-  ];
 
   const handleChange = (index: number) => {
     switch (index) {
@@ -106,7 +55,15 @@ const MostAttractive = () => {
         </div>
       </div>
 
-      <div className="flex justify-center mt-10 relative">
+      <div
+        className="flex justify-center mt-10 relative
+      before:content-[''] before:absolute before:w-[450px] before:h-[400px] before:bg-mandalaLeft before:left-[-90px] before:top-[450px] before:z-10
+      before:bg-cover before:opacity-50
+
+      after:content-[''] after:absolute after:w-[450px] after:h-[400px] after:bg-mandalaLeft after:right-[-90px] after:top-[-300px] after:z-10
+      after:bg-cover after:opacity-50
+      "
+      >
         <div className="bg-white w-[1px] h-[750px] flex flex-col justify-around items-center">
           <HexagonText
             alignment="left"
