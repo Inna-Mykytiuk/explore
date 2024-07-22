@@ -44,10 +44,10 @@ const MostAttractive = () => {
     >
       <div className="container">
         <div className="text-center">
-          <h2 className="text-titleColor text-[76px] font-dancing">
+          <h2 className="text-titleColor text-[76px] font-dancing text-center sm:text-start md:text-center leading-[60px] xl:leading-normal">
             You should visit
           </h2>
-          <h2 className="text-[54px] text-white font-montserrat font-medium leading-[50px]">
+          <h2 className="text-[36px] md:text-[54px] text-white font-montserrat font-medium text-center sm:text-start md:text-center leading-[50px]">
             Most Attractive Place
             <br />
             in {infos.name}
@@ -56,11 +56,21 @@ const MostAttractive = () => {
       </div>
 
       <div
-        className="flex justify-start lg:justify-center mt-10 relative ml-[60px] sm:ml-[80px] lg:ml-0
-      before:content-[''] before:absolute before:w-[450px] before:h-[400px] before:bg-mandalaLeft before:left-[-90px] before:top-[450px] before:z-10
+        className="flex justify-start lg:justify-center mt-10 relative ml-[60px] sm:ml-[120px] lg:ml-0
+      before:content-[''] before:absolute
+      before:hidden sm:before:block
+      before:w-[350px] before:h-[300px] 
+      xl:before:w-[450px] xl:before:h-[400px] 
+      before:top-[600px] xl:before:top-[450px]
+      before:bg-mandalaLeft before:left-[-90px]  before:z-10
       before:bg-cover before:opacity-50
 
-      after:content-[''] after:absolute after:w-[450px] after:h-[400px] after:bg-mandalaLeft after:right-[-90px] after:top-[-300px] after:z-10
+      after:content-[''] after:absolute
+      after:hidden sm:after:block
+      after:w-[350px] after:h-[300px] 
+      xl:after:w-[450px] xl:after:h-[400px]
+      after:top-[-300px] 
+      after:bg-mandalaLeft after:right-[-90px]  after:z-10
       after:bg-cover after:opacity-50
       "
       >
