@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import { MyContext } from "@/context/AppContext";
 import HexagonText from "../HexagonText/HexagonText";
 import datas from "@/data/reasonData";
+import BookTour from "@/utils/BookTour/BookTour";
 
 const MostAttractive = () => {
   useEffect(() => {
@@ -39,7 +40,7 @@ const MostAttractive = () => {
 
   return (
     <section
-      className="w-full bg-mainBcg pt-[50px] md:pt-[80px] xl:pt-[120px] pb-[250px] overflow-hidden "
+      className="w-full bg-mainBcg pt-[50px] md:pt-[80px] xl:pt-[120px] pb-[120px] xl:pb-[250px] overflow-hidden "
       id="reason"
     >
       <div className="container">
@@ -63,13 +64,13 @@ const MostAttractive = () => {
       xl:before:w-[450px] xl:before:h-[400px] 
       before:top-[600px] 
       before:bg-mandalaLeft before:left-[-150px]  before:z-10
-      before:bg-cover before:opacity-50
+      before:bg-cover before:opacity-30
 
       after:content-[''] after:absolute
       after:hidden sm:after:block
       after:w-[350px] after:h-[300px] 
       xl:after:w-[450px] xl:after:h-[400px]
-      after:top-[-300px] 
+      after:top-[-250px] 
       after:bg-mandalaLeft after:right-[-90px]  after:z-10
       after:bg-cover after:opacity-30
       "
@@ -150,6 +151,10 @@ const MostAttractive = () => {
           />
         </div>
       </div>
+      <BookTour
+        className="justify-center
+      "
+      />
     </section>
   );
 };

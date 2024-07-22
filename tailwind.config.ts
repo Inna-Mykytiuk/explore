@@ -5,7 +5,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/section/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/utils/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     screens: {
@@ -17,6 +17,7 @@ const config: Config = {
       xxl: '1440px',
 
       smOnly: { max: '767.98px' },
+      lgOnly: { min: '480px', max: '1279.98px' },
       mdOnly: { min: '768px', max: '1279.98px' },
       notXL: { max: '1279.98px' },
     },
