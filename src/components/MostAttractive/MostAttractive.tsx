@@ -39,7 +39,7 @@ const MostAttractive = () => {
 
   return (
     <section
-      className="w-full bg-mainBcg pt-[120px] pb-[250px] overflow-hidden "
+      className="w-full bg-mainBcg pt-[50px] md:pt-[80px] xl:pt-[120px] pb-[250px] overflow-hidden "
       id="reason"
     >
       <div className="container">
@@ -56,7 +56,7 @@ const MostAttractive = () => {
       </div>
 
       <div
-        className="flex justify-center mt-10 relative
+        className="flex justify-start lg:justify-center mt-10 relative ml-[60px] sm:ml-[80px] lg:ml-0
       before:content-[''] before:absolute before:w-[450px] before:h-[400px] before:bg-mandalaLeft before:left-[-90px] before:top-[450px] before:z-10
       before:bg-cover before:opacity-50
 
@@ -78,7 +78,7 @@ const MostAttractive = () => {
             alt="image"
             width={500}
             height={500}
-            className="absolute top-[-150px]  left-[-30px] w-[500px] h-[500px] object-cover opacity-5"
+            className="hidden lg:block absolute top-[-30px] left-0 w-[350px] h-[350px] xl:w-[500px] xl:h-[500px] object-cover opacity-5"
             data-aos="fade-right"
             data-aos-delay="600"
             data-aos-duration="600"
@@ -88,25 +88,37 @@ const MostAttractive = () => {
             alt="image"
             width={200}
             height={200}
-            className="absolute top-[40px]  left-[500px] w-[200px] h-[200px] object-cover opacity-5"
+            className="hidden xl:block absolute top-[40px]  left-[500px] w-[200px] h-[200px] object-cover opacity-5"
             data-aos="fade-right"
             data-aos-delay="800"
             data-aos-duration="800"
           />
           <HexagonText
-            alignment="right"
+            alignment="left"
             text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius ab laudantium amet velit odio mollitia esse possimus reprehenderit facilis aliquid."
+            additionalClassName="block lg:hidden"
+          />
+          <HexagonText
+            alignment="left"
+            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius ab laudantium amet velit odio mollitia esse possimus reprehenderit facilis aliquid."
+            additionalClassName="block lg:hidden"
           />
           <HexagonText
             alignment="right"
             text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius ab laudantium amet velit odio mollitia esse possimus reprehenderit facilis aliquid."
+            additionalClassName="hidden lg:block"
+          />
+          <HexagonText
+            alignment="right"
+            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius ab laudantium amet velit odio mollitia esse possimus reprehenderit facilis aliquid."
+            additionalClassName="hidden lg:block"
           />
           <Image
             src={infos.rightImg1}
             alt="image"
             width={500}
             height={500}
-            className="absolute top-[200px]  right-[-30px] w-[500px] h-[500px] object-cover opacity-5"
+            className="hidden lg:block absolute top-[270px] right-0 w-[350px] h-[350px] xl:w-[500px] xl:h-[500px] object-cover opacity-5"
             data-aos="fade-left"
             data-aos-delay="600"
             data-aos-duration="600"
@@ -116,7 +128,7 @@ const MostAttractive = () => {
             alt="image"
             width={200}
             height={200}
-            className="absolute top-[390px]  right-[500px] w-[200px] h-[200px] object-cover opacity-5"
+            className="hidden xl:block absolute top-[390px]  right-[500px] w-[200px] h-[200px] object-cover opacity-5"
             data-aos="fade-left"
             data-aos-delay="800"
             data-aos-duration="800"
