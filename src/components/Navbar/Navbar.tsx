@@ -18,12 +18,12 @@ const Navbar = () => {
     },
     {
       id: 3,
-      title: "View Point",
+      title: "View",
       url: "view-point",
     },
     {
       id: 4,
-      title: "Book Now",
+      title: "Booking",
       url: "booking",
     },
   ];
@@ -31,14 +31,14 @@ const Navbar = () => {
   return (
     <nav className="w-full pt-[40px]">
       <div className="container">
-        <div className="flex items-center justify-between">
-          <a href="/" className="text-white">
-            LOGO
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          <a href="/" className="text-white font-bold text-[48px] font-dancing">
+            Explore
           </a>
 
           <ul
-            className="hidden md:flex text-white text-[17px] font-bold uppercase gap-10
-            bg-lightBlue bg-opacity-[70%] py-3 px-8 rounded-[40px]
+            className="flex text-white text-sm sm:text-base font-bold uppercase gap-4 md:gap-10
+            bg-lightBlue bg-opacity-[70%] py-3 px-4 sm:px-8 rounded-[40px]
             "
           >
             {navLinks.map((link) => (

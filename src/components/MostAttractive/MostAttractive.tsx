@@ -151,10 +151,7 @@ const MostAttractive = () => {
           />
         </div>
       </div>
-      <BookTour
-        className="justify-center
-      "
-      />
+      <BookTour className="justify-center mt-8 lg:mt-0" />
     </section>
   );
 };

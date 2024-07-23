@@ -1,0 +1,44 @@
+{
+  "title": "Explore",
+  "subtitle": "Social networks",
+  "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore ducimus officia, asperiores sapiente cum, illo ex exercitationem soluta nam aut minima dignissimos aperiam illum numquam mollitia! Minima consequuntur magnam illum.",
+  "socialLinks": [
+    {
+      "href": "#",
+      "ariaLabel": "Facebook",
+      "icon": "FaFacebookF"
+    },
+    {
+      "href": "#",
+      "ariaLabel": "Instagram",
+      "icon": "AiFillInstagram"
+    },
+    {
+      "href": "https://www.linkedin.com/in/inna-mykytiuk/",
+      "ariaLabel": "LinkedIn",
+      "icon": "FaLinkedinIn"
+    },
+    {
+      "href": "#",
+      "ariaLabel": "Twitter",
+      "icon": "FaTwitter"
+    },
+    {
+      "href": "https://github.com/Inna-Mykytiuk",
+      "ariaLabel": "Github",
+      "icon": "FaGithubAlt"
+    },
+    {
+      "href": "#",
+      "ariaLabel": "Telegram",
+      "icon": "FaTelegramPlane"
+    }
+  ],
+  "contacts": "Contacts",
+  "location": "The whole world",
+  "email": "innka-pinnka@ukr.net",
+  "phoneNumber": "+380 (93) 999-99-99",
+  "bottomText": "© Explore.com. All Rights Reserved.",
+  "bottomText1": "Made with",
+  "bottomText2": "by Tokio"
+}
