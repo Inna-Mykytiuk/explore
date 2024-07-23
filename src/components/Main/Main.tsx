@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useContext } from "react";
-import "./Main.css";
 import Navbar from "../Navbar/Navbar";
 import Header from "../Header/Header";
 import { MyContext } from "@/context/AppContext";

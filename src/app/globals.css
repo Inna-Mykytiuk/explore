@@ -16,3 +16,28 @@
   rotate: 180deg;
   text-orientation: mixed;
 }
+
+.bgContainer1,
+.bgContainer2,
+.sbgContainer3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+
+.bgContainer1 {
+  background-image: linear-gradient(to top, #001E23, rgba(255, 0, 0, 0)), url("/images/indoBg1.jpg");
+}
+
+.bgContainer2 {
+  background-image: linear-gradient(to top, #001E23, rgba(255, 0, 0, 0)), url("/images/thaiBg.png");
+}
+
+.bgContainer3 {
+  background-image: linear-gradient(to top, #001E23, rgba(255, 0, 0, 0)), url("/images/nepalBg1.jpg");
+}
+
+.bgContainer4 {
+  background-image: linear-gradient(to bottom, #001E23, rgba(255, 0, 0, 0)), linear-gradient(to top, #001E23, rgba(255, 0, 0, 0)), url("/images/thaiBg.png");
+}
