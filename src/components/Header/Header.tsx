@@ -73,7 +73,7 @@ const Header = () => {
                 inline-block text-center no-underline  max-w-full cursor-pointer border border-white text-white bg-transparent hover:shadow-[4px_4px_30px_0px_rgba(207,188,185,0.9)]
                 "
               >
-                Book Now
+                Contact Us
               </button>
               <button type="button" className="flex items-center gap-2">
                 <FaYoutube className=" text-[40px] text-red-700" />

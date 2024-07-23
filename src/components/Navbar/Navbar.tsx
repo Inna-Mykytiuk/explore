@@ -22,8 +22,8 @@ const Navbar = () => {
     },
     {
       id: 4,
-      title: "Booking",
-      url: "booking",
+      title: "Contact Us",
+      url: "contacts",
     },
   ];
 
