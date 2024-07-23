@@ -21,6 +21,7 @@ const datas = [
     leftImg2: img7,
     rightImg1: img4,
     rightImg2: img10,
+    
   },
   {
     name: "Thailand",

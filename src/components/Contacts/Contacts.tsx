@@ -43,7 +43,7 @@ export default function Contacts() {
             alt="travel logo"
             width={485}
             height={400}
-            className="hidden xl:block absolute bottom-[-50px] md:bottom-[20px] right-[-200px] md:right-[-150px] xl:right-[130px] object-cover object-center w-[485px] h-[400px] z-[-1]  opacity-75"
+            className="hidden xl:block absolute bottom-[-50px] md:bottom-[20px] right-[-200px] md:right-[-150px] xl:right-[60px] object-cover object-center w-[485px] h-[400px] z-[-1]  opacity-75"
             data-aos="fade-left"
             data-aos-delay="600"
             data-aos-duration="600"

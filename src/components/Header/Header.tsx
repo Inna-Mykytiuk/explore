@@ -10,14 +10,20 @@ const contentData = [
   {
     country: "Indonesia",
     title: "Explore Indonesia",
+    description:
+      "Indonesia is an archipelago nation in Southeast Asia, comprising over 17,000 islands. It is known for its diverse cultures, languages, and vibrant landscapes, including beaches, volcanoes, and rainforests. The country has a rich history influenced by various civilizations and is the world's largest Muslim-majority nation.",
   },
   {
     country: "Thailand",
     title: "Explore Thailand",
+    description:
+      "Thailand is a Southeast Asian country famous for its tropical beaches, opulent royal palaces, ancient ruins, and ornate temples displaying figures of Buddha. The bustling capital, Bangkok, is known for its modern skyline juxtaposed with cultural landmarks. Thai cuisine, known for its balance of sweet, sour, salty, and spicy flavors, is celebrated worldwide.",
   },
   {
     country: "Nepal",
     title: "Explore Nepal",
+    description:
+      "Nepal is a landlocked country in South Asia, nestled in the Himalayas between China and India. It is renowned for its mountainous terrain, including Mount Everest, the world's highest peak. Nepal boasts a unique cultural heritage, with influences from Hinduism and Buddhism, and is known for its temples, festivals, and trekking routes.",
   },
 ];
 
@@ -31,7 +37,7 @@ const Header = () => {
   const { activeSlideIndex } = context;
 
   const handleClass = (activeSlideIndex: number) => {
-    const { country, title } = contentData[activeSlideIndex] || {};
+    const { country, title, description } = contentData[activeSlideIndex] || {};
 
     if (country && title) {
       return (
@@ -43,10 +49,7 @@ const Header = () => {
             </span>
           </h1>
           <p className="text-white mt-[-10px] md:mt-[-40px] w-[95%] font-semibold">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            veniam accusamus doloribus, quidem sequi recusandae omnis facere,
-            debitis ad soluta doloremque. Sed eveniet magnam minima omnis
-            sapiente? Neque, incidunt asperiores?
+            {description}
           </p>
         </>
       );
@@ -80,7 +83,7 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="w-1/3 flex flex-col items-end justify-end relative  smOnly:left-[260px] mdOnly:left-[400px]">
+          <div className="w-1/3 flex flex-col items-end justify-end relative smOnly:left-[260px] mdOnly:left-[400px] xlOnly:top-[-70px]">
             <Slider />
           </div>
         </div>
