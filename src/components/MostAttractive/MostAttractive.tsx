@@ -40,7 +40,7 @@ const MostAttractive = () => {
 
   return (
     <section
-      className="w-full bg-mainBcg pt-[50px] md:pt-[80px] xl:pt-[120px] pb-[120px] xl:pb-[250px] overflow-hidden "
+      className="w-full bg-mainBcg pt-[50px] md:pt-[80px] xl:pt-[120px] pb-[120px] xl:pb-[200px] overflow-hidden "
       id="reason"
     >
       <div className="container">

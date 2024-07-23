@@ -1,6 +1,11 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import { BsHexagonFill } from "react-icons/bs";
 import classNames from "classnames";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface HexagonTextProps {
   alignment: "left" | "right";
@@ -13,6 +18,10 @@ const HexagonText: React.FC<HexagonTextProps> = ({
   text,
   additionalClassName,
 }) => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div
       className={classNames("relative flex items-center", additionalClassName)}
@@ -24,6 +33,9 @@ const HexagonText: React.FC<HexagonTextProps> = ({
             ? "left-[70px] text-left"
             : "right-[70px] text-right"
         } text-white`}
+        data-aos={`${alignment === "left" ? "fade-left" : "fade-right"} `}
+        data-aos-delay="800"
+        data-aos-duration="800"
       >
         {text}
       </p>

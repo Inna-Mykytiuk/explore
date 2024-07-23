@@ -93,22 +93,22 @@ const ViewPoint = () => {
                 </div>
 
                 {state === index && (
-                  <p className="absolute top-[27px] right-0 text-[25px] font-semibold text-white flex  items-center gap-1 justify-center verticalText">
+                  <p className="absolute top-[17px] right-0 text-[25px] font-semibold text-white flex  items-center gap-1 justify-center verticalText">
                     <BiSolidCalendar />
                     2/07
                   </p>
                 )}
               </div>
             ))}
-            <BookTour className="justify-center xl:justify-start mr-[100px] xl:mr-0" />
+            <BookTour className="justify-center xl:justify-start mr-[100px] xl:mr-0 mt-[20px] mb-[30px]" />
           </div>
-          <div className="w-[60%] viewPoinImg">
+          <div className="w-full xl:w-[60%]">
             <Image
               src={imgSrc}
               alt="img"
               width={800}
               height={650}
-              className={`h-[250px] xl:h-[650px] w-full object-cover ${
+              className={`h-[350px] xl:h-[650px] w-full object-cover ${
                 isVisible ? "" : "fade-out"
               }`}
             />
