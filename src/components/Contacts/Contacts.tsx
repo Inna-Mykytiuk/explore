@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
 import ContactForm from "../ContactForm/ContactForm";
+import branchImg from "../../../public/pictures/branch.png";
 
 export default function Contacts() {
   useEffect(() => {
@@ -38,7 +39,7 @@ export default function Contacts() {
             <ContactForm />
           </div>
           <Image
-            src="../../public/pictures/branch.png"
+            src={branchImg}
             alt="travel logo"
             width={485}
             height={400}
