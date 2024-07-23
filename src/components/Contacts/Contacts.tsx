@@ -38,7 +38,7 @@ export default function Contacts() {
             <ContactForm />
           </div>
           <Image
-            src="/pictures/branch.png"
+            src="../../public/pictures/branch.png"
             alt="travel logo"
             width={485}
             height={400}
