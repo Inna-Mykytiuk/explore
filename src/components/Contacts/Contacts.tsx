@@ -1,15 +1,20 @@
 "use client";
 
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Image from "next/image";
 import ContactForm from "../ContactForm/ContactForm";
 
 export default function Contacts() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section
       id="contacts"
-      className="bgContainer4 z-[1] relative mt-[20px] md:mt-[40px] pt-[50px] pb-[50px] md:pb-[100px] xl:pb-[150px]"
+      className="bgContainer4 z-[1] relative pt-[50px] pb-[50px] md:pb-[100px] xl:pb-[150px]"
     >
       <div className="container bg-contactBg  bg-no-repeat bg-cover bg-center">
         <div className="text-center mb-[40px] md:mb-[80px]">
@@ -20,38 +25,28 @@ export default function Contacts() {
             Get in touch
           </h2>
         </div>
-        <div className="flex flex-col md:flex-row w-full relative">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.4 }}
-            transition={{ duration: 0.4 }}
-            variants={{
-              hidden: { opacity: 0, x: -100 },
-              visible: { opacity: 1, x: 0 },
-            }}
+        <div
+          className="flex flex-col md:flex-row w-full relative
+        "
+        >
+          <div
             className="w-full xl:w-[50%]"
+            data-aos="fade-right"
+            data-aos-delay="600"
+            data-aos-duration="600"
           >
             <ContactForm />
-          </motion.div>
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
-            variants={{
-              hidden: { opacity: 0, x: 100 },
-              visible: { opacity: 1, x: 0 },
-            }}
-          >
-            {/* <Image
-              src="/images/boat/yacht2.png"
-              alt="travel logo"
-              width={350}
-              height={303}
-              className="absolute bottom-[-50px] md:bottom-[-75px] right-[-200px] md:right-[-240px] xl:right-[130px] object-cover object-center w-[400px] h-[750px] z-[-1] xl:z-[1]"
-            /> */}
-          </motion.div>
+          </div>
+          <Image
+            src="/pictures/branch.png"
+            alt="travel logo"
+            width={485}
+            height={400}
+            className="hidden xl:block absolute bottom-[-50px] md:bottom-[20px] right-[-200px] md:right-[-150px] xl:right-[130px] object-cover object-center w-[485px] h-[400px] z-[-1]  opacity-75"
+            data-aos="fade-left"
+            data-aos-delay="600"
+            data-aos-duration="600"
+          />
         </div>
       </div>
     </section>

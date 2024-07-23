@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, ChangeEvent, FormEvent } from "react";
+import { useState, useEffect, ChangeEvent, FormEvent } from "react";
 
 interface FormData {
   name: string;
@@ -81,11 +81,11 @@ export default function ContactForm() {
           SUBMIT
         </button>
       </form>
-      {successMessage && (
+      {/* {successMessage && (
         <div className="mt-4 text-titleColor text-center font-bold">
           {successMessage}
         </div>
-      )}
+      )} */}
     </>
   );
 }

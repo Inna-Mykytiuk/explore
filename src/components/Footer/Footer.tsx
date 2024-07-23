@@ -41,7 +41,7 @@ export default function Footer() {
     <section
       id="gallery"
       className="relative w-full bg-mainBcg pb-[30px] md:pb-[50px]
-      after:block after:absolute after:bg-mandalaLeft after:top-0 after:right-[-20px] after:h-full after:w-[650px] after:bg-cover after:opacity-5 after:z-[1]"
+      after:hidden md:after:block after:absolute after:bg-mandalaLeft after:top-0 after:right-[-20px] after:h-full after:w-[650px] after:bg-cover after:opacity-5 after:z-[1]"
     >
       <div className="container">
         <div className="flex flex-col xl:flex-row xl:pb-[50px] border-b-[1px] border-white mb-[30px] pb-[30px]">

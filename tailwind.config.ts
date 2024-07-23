@@ -35,13 +35,10 @@ const config: Config = {
         backdrop: `linear-gradient(rgba(41, 41, 41, 0.40),rgba(41, 41, 41, 0.40))`,
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        mainBgBoat: "url(/images/boatMainBg4.webp)",
-        contactBg: "url(/images/kayaks5.png)",
-        line: `url(/images/elements/roundedLine.png)`,
-        wave: `url(/images/elements/wave.webp)`,
-        lines: `url(/images/elements/lines1.png)`,
-        linesKayak: `url(/images/elements/lines6.png)`,
-        sea: `url(/images/water/whirpool4.png)`,
+        palms: `url(/pictures/palm.png)`,
+        cliff: `url(/pictures/cliff.png)`,
+        branch: `url(/pictures/branch.png)`,
+        rock: `url(/pictures/rock.png)`,
 
         mandalaLeft: `url(/pictures/mandala11.png)`,
         mandalaRight: `url(/pictures/mandala22.png)`,
