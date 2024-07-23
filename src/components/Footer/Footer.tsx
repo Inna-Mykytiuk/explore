@@ -40,11 +40,11 @@ export default function Footer() {
   return (
     <section
       id="gallery"
-      className="relative w-full bg-mainBcg pt-[50px] md:pt-[100px] pb-[50px] md:pb-[100px]
-      after:hidden md:after:block after:absolute after:bg-lines after:top-0 after:right-[-20px] after:h-full after:w-[650px] after:bg-cover after:z-[1]"
+      className="relative w-full bg-mainBcg pb-[30px] md:pb-[50px]
+      after:block after:absolute after:bg-mandalaLeft after:top-0 after:right-[-20px] after:h-full after:w-[650px] after:bg-cover after:opacity-5 after:z-[1]"
     >
       <div className="container">
-        <div className="flex flex-col xl:flex-row pb-10 xl:pb-[80px] border-b-[1px] border-white mb-[50px]">
+        <div className="flex flex-col xl:flex-row xl:pb-[50px] border-b-[1px] border-white mb-[30px] pb-[30px]">
           <div className="flex flex-col max-w-full xl:max-w-[40%]">
             <h3 className="text-white font-dancing text-2xl uppercase mb-[30px]">
               {title}
