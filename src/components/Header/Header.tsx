@@ -5,6 +5,7 @@ import "./Header.css";
 import { FaYoutube } from "react-icons/fa";
 import Slider from "@/utils/Slider/Slider";
 import { MyContext } from "@/context/AppContext";
+import { Link } from "react-scroll";
 
 const contentData = [
   {
@@ -68,14 +69,18 @@ const Header = () => {
           <div className="max-w-[600px] xxl:max-w-[800px]">
             {classChange}
             <div className="mt-8 mb-8 xl:mt-[100px] flex gap-12">
-              <button
-                type="button"
+              <Link
+                to="contacts"
+                smooth={true}
+                spy={true}
+                href="#"
+                ignoreCancelEvents={true}
                 className="border-1 px-6 py-2 font-semibold  hover:border-white transition-all duration-300 ease-in-out
                 inline-block text-center no-underline  max-w-full cursor-pointer border border-white text-white bg-transparent hover:shadow-[4px_4px_30px_0px_rgba(207,188,185,0.9)]
                 "
               >
                 Contact Us
-              </button>
+              </Link>
               <button type="button" className="flex items-center gap-2">
                 <FaYoutube className=" text-[40px] text-red-700" />
                 <span className="text-white">Watch Videos</span>

@@ -1,8 +1,11 @@
+"use client";
+
 import React from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosHeart } from "react-icons/io";
+import { Link } from "react-scroll";
 
 import data from "@/data/footer.json";
 import { SocialLink } from "../SocialLinks/SocialLinks";
@@ -46,9 +49,16 @@ export default function Footer() {
       <div className="container">
         <div className="flex flex-col xl:flex-row xl:pb-[50px] border-b-[1px] border-white mb-[30px] pb-[30px]">
           <div className="flex flex-col max-w-full xl:max-w-[40%]">
-            <h3 className="text-white font-dancing text-2xl uppercase mb-[30px]">
+            <Link
+              to="home"
+              smooth={true}
+              spy={true}
+              href="#"
+              ignoreCancelEvents={true}
+              className="text-white font-dancing text-2xl uppercase mb-[30px]"
+            >
               {title}
-            </h3>
+            </Link>
             <p className="text-white text-xs leading-7 font-normal mb-8 xl:mb-0">
               {description}
             </p>

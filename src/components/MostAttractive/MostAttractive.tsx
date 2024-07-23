@@ -78,11 +78,11 @@ const MostAttractive = () => {
         <div className="bg-white w-[1px] h-[750px] flex flex-col justify-around items-center">
           <HexagonText
             alignment="left"
-            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius ab laudantium amet velit odio mollitia esse possimus reprehenderit facilis aliquid."
+            text="All three countries, Indonesia, Nepal, and Thailand, are renowned for their rich cultural heritage and vibrant traditions."
           />
           <HexagonText
             alignment="left"
-            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius ab laudantium amet velit odio mollitia esse possimus reprehenderit facilis aliquid."
+            text="Each country offers unique natural landscapes, from Indonesia's lush rainforests and beaches, Nepal's towering Himalayan peaks, to Thailand's tropical islands and scenic coastlines."
           />
           <Image
             src={infos.leftImg1}
@@ -106,22 +106,22 @@ const MostAttractive = () => {
           />
           <HexagonText
             alignment="left"
-            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius ab laudantium amet velit odio mollitia esse possimus reprehenderit facilis aliquid."
+            text="Tourism is a significant part of the economy in all three countries, attracting millions of visitors annually for their historical sites, adventure tourism, and cultural experiences."
             additionalClassName="block lg:hidden"
           />
           <HexagonText
             alignment="left"
-            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius ab laudantium amet velit odio mollitia esse possimus reprehenderit facilis aliquid."
+            text="The traditional cuisines of Indonesia, Nepal, and Thailand are globally celebrated for their distinct flavors, utilizing a variety of spices, herbs, and local ingredients."
             additionalClassName="block lg:hidden"
           />
           <HexagonText
             alignment="right"
-            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius ab laudantium amet velit odio mollitia esse possimus reprehenderit facilis aliquid."
+            text="Tourism is a significant part of the economy in all three countries, attracting millions of visitors annually for their historical sites, adventure tourism, and cultural experiences."
             additionalClassName="hidden lg:block"
           />
           <HexagonText
             alignment="right"
-            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius ab laudantium amet velit odio mollitia esse possimus reprehenderit facilis aliquid."
+            text="The traditional cuisines of Indonesia, Nepal, and Thailand are globally celebrated for their distinct flavors, utilizing a variety of spices, herbs, and local ingredients."
             additionalClassName="hidden lg:block"
           />
           <Image
@@ -147,7 +147,7 @@ const MostAttractive = () => {
 
           <HexagonText
             alignment="left"
-            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius ab laudantium amet velit odio mollitia esse possimus reprehenderit facilis aliquid."
+            text="Festivals play a crucial role in the cultural life of each country, with Indonesia celebrating events like Nyepi, Nepal observing Dashain and Tihar, and Thailand known for Songkran and Loy Krathong."
           />
         </div>
       </div>
