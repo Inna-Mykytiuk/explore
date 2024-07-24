@@ -20,7 +20,7 @@ export default function Contacts() {
       <div className="container ">
         <div className="text-center mb-[40px] md:mb-[80px]">
           <h2 className="text-titleColor text-[76px] font-dancing text-center sm:text-start md:text-center leading-[60px] xl:leading-normal">
-            Contact Us
+            Contacts
           </h2>
           <h2 className="text-[36px] md:text-[54px] text-white font-montserrat font-medium text-center sm:text-start md:text-center leading-[50px]">
             Get in touch

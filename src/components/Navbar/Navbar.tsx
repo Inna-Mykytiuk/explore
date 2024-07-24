@@ -22,7 +22,7 @@ const Navbar = () => {
     },
     {
       id: 4,
-      title: "Contact Us",
+      title: "Contacts",
       url: "contacts",
     },
   ];
