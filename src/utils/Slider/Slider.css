@@ -44,13 +44,12 @@
   z-index: -1;
 }
 
-/* .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
-  left: -20px !important;
-} */
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet {
+  background: #4A8087;
+  opacity: .8 !important;
+}
 
 .swiper-pagination-bullet {
-  background: rgba(255, 255, 255, 0.9) !important;
-  background-color: #fff !important;
   width: 15px !important;
   height: 15px !important;
   padding: 2px !important;
