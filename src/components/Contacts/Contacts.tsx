@@ -15,9 +15,9 @@ export default function Contacts() {
   return (
     <section
       id="contacts"
-      className="bgContainer4 z-[1] relative pt-[50px] pb-[50px] md:pb-[100px] xl:pb-[150px]"
+      className="bgContainer4 z-[1] relative pt-[50px] pb-[50px] md:pb-[100px] xl:pb-[150px] bg-contactBg  bg-no-repeat bg-cover bg-center"
     >
-      <div className="container bg-contactBg  bg-no-repeat bg-cover bg-center">
+      <div className="container ">
         <div className="text-center mb-[40px] md:mb-[80px]">
           <h2 className="text-titleColor text-[76px] font-dancing text-center sm:text-start md:text-center leading-[60px] xl:leading-normal">
             Contact Us

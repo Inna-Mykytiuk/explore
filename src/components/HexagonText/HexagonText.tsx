@@ -28,7 +28,7 @@ const HexagonText: React.FC<HexagonTextProps> = ({
     >
       <BsHexagonFill className="text-[30px] rotate-[90deg] text-textBlue" />
       <p
-        className={`absolute w-[250px] md:w-[350px] ml-[-30px] sm:ml-0 ${
+        className={`absolute w-[260px] md:w-[350px] ml-[-30px] sm:ml-0 ${
           alignment === "left"
             ? "left-[70px] text-left"
             : "right-[70px] text-right"

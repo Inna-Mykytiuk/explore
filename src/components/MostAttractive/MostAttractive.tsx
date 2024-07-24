@@ -40,7 +40,7 @@ const MostAttractive = () => {
 
   return (
     <section
-      className="w-full bg-mainBcg pt-[50px] md:pt-[80px] xl:pt-[120px] pb-[120px] xl:pb-[200px] overflow-hidden "
+      className="w-full bg-mainBcg pt-[120px] md:pt-[80px] xl:pt-[120px] pb-[120px] xl:pb-[200px] overflow-hidden "
       id="reason"
     >
       <div className="container">
@@ -82,7 +82,7 @@ const MostAttractive = () => {
           />
           <HexagonText
             alignment="left"
-            text="Each country offers unique natural landscapes, from Indonesia's lush rainforests and beaches, Nepal's towering Himalayan peaks, to Thailand's tropical islands and scenic coastlines."
+            text="Each country offers unique landscapes, from Indonesia's lush rainforests and beaches, Nepal's towering Himalayan peaks, to Thailand's scenic coastlines."
           />
           <Image
             src={infos.leftImg1}
@@ -106,22 +106,22 @@ const MostAttractive = () => {
           />
           <HexagonText
             alignment="left"
-            text="Tourism is a significant part of the economy in all three countries, attracting millions of visitors annually for their historical sites, adventure tourism, and cultural experiences."
+            text="All three countries, attracting millions of visitors annually for their, adventure tourism, and cultural experiences."
             additionalClassName="block lg:hidden"
           />
           <HexagonText
             alignment="left"
-            text="The traditional cuisines of Indonesia, Nepal, and Thailand are globally celebrated for their distinct flavors, utilizing a variety of spices, herbs, and local ingredients."
+            text="The traditional cuisines of Indonesia, Nepal, and Thailand are globally celebrated for their distinct flavors."
             additionalClassName="block lg:hidden"
           />
           <HexagonText
             alignment="right"
-            text="Tourism is a significant part of the economy in all three countries, attracting millions of visitors annually for their historical sites, adventure tourism, and cultural experiences."
+            text="All three countries, attracting millions of visitors annually for their, adventure tourism, and cultural experiences."
             additionalClassName="hidden lg:block"
           />
           <HexagonText
             alignment="right"
-            text="The traditional cuisines of Indonesia, Nepal, and Thailand are globally celebrated for their distinct flavors, utilizing a variety of spices, herbs, and local ingredients."
+            text="The traditional cuisines of Indonesia, Nepal, and Thailand are globally celebrated for their distinct flavors."
             additionalClassName="hidden lg:block"
           />
           <Image

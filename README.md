@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Explore
+
+**Theme:** Travel across Indonesia, Nepal, and Thailand
+
+Explore is a single-page landing site designed to provide an engaging and informative experience for users interested in traveling to Indonesia, Nepal, and Thailand. The site features smooth navigation, stunning visuals, and comprehensive information about these destinations.
+
+## Table of Content
+
+- [Routing](#routing)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Technologies Used](#technologies-used)
+
+## Routing
+
+The app uses react-scroll for navigation. The available sections are:
+
+- `Header`:
+
+  - **Sliders**: Displays background transitions and photo galleries of the featured countries.
+  - **General Information**: Provides an overview of the travel destinations.
+
+- `Reason`:
+
+  - **Country Facts**: Offers descriptions and interesting facts about Indonesia, Nepal, and Thailand.
+
+- `View`:
+
+  - **Photo Slider**: Showcases photographs of the countries.
+  - **Event Information**: Provides details about events in each country.
+
+- `Contact`:
+  - **Contact Form**: A simple form for users to get in touch, ask questions, or request further information.
+
+## Features
+
+- **Smooth Navigation**: Clicking on any navigation link smoothly scrolls to the corresponding section of the page.
+- **Responsive Design**: The site is designed to adapt seamlessly to mobile devices.
 
 ## Getting Started
 
-First, run the development server:
+To run the application locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository: `git clone https://github.com/your-repo/explore.git`
+2. Install dependencies: `npm install`
+3. Run the app: `npm run dev`
+4. Open [http://localhost:3000](http://localhost:3000) in your browser (Note: the port may be changed if port 3000 is occupied by another application).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Next.js**:
+   Our website is powered by Next.js, providing a seamless and efficient user experience. It ensures fast loading times and smooth navigation.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. **Tailwind CSS**:
+   Used for styling, offering a highly customizable and utility-first approach to CSS that ensures responsive and attractive design.
 
-## Learn More
+3. **React-Scroll**:
+   Enhancing the scrolling experience on our website, React-Scroll adds a touch of sophistication, allowing users to glide smoothly between sections.
 
-To learn more about Next.js, take a look at the following resources:
+4. **TypeScript**:
+   Implemented for static type checking, enhancing code quality and reducing errors during development.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. **Swiper**:
+   Used for creating the responsive, touch-friendly photo slider in the View section, providing a seamless viewing experience on all devices.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Summary
 
-## Deploy on Vercel
+This landing page effectively combines visual appeal with functional design to create an engaging user experience for individuals interested in traveling to Indonesia, Nepal, and Thailand. By leveraging modern web development technologies, the site ensures high performance, responsiveness, and an interactive user interface. The strategic use of smooth scrolling and an intuitive navigation system further enhances the overall experience, making it easy for users to explore the destinations and get in touch for more information.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![preview](https://github.com/Inna-Mykytiuk/explore/blob/main/public/presentation1.jpg)
+![preview](https://github.com/Inna-Mykytiuk/explore/blob/main/public/presentation2.jpg)
