@@ -44,10 +44,21 @@
   z-index: -1;
 }
 
+/* .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  left: -20px !important;
+} */
+
 .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.9) !important;
+  background-color: #fff !important;
+  width: 15px !important;
+  height: 15px !important;
+  padding: 2px !important;
+  cursor: pointer !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: white !important;
-  width: 12px;
-  height: 12px;
 }
 
 
@@ -108,5 +119,3 @@
     left: 32%;
   }
 }
-
-@media screen and (min-width: 1440px) {}

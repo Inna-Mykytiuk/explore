@@ -28,16 +28,28 @@
 
 .bgContainer1 {
   background-image: linear-gradient(to top, #001E23, rgba(255, 0, 0, 0)), url("/images/indoBg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .bgContainer2 {
   background-image: linear-gradient(to top, #001E23, rgba(255, 0, 0, 0)), url("/images/thaiBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .bgContainer3 {
   background-image: linear-gradient(to top, #001E23, rgba(255, 0, 0, 0)), url("/images/nepalBg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .bgContainer4 {
   background-image: linear-gradient(to bottom, #001E23, rgba(255, 0, 0, 0)), linear-gradient(to top, #001E23, rgba(255, 0, 0, 0)), url("/images/thaiBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
