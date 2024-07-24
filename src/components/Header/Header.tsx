@@ -88,7 +88,7 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="w-1/3 flex flex-col items-end justify-end relative smOnly:left-[260px] mdOnly:left-[400px] xlOnly:top-[-70px]">
+          <div className="w-1/3 flex flex-col items-end justify-end relative smOnly:left-[260px] mdOnly:left-[400px] xl:top-[-70px] xlOnly:left-[70px]">
             <Slider />
           </div>
         </div>

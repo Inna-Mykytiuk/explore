@@ -19,9 +19,8 @@ const config: Config = {
       smOnly: { max: '767.98px' },
       lgOnly: { min: '480px', max: '1279.98px' },
       mdOnly: { min: '768px', max: '1279.98px' },
-      XlOnly: { min: '1280px' },
       notXL: { max: '1279.98px' },
-      xlOnly: { min: '1440px' },
+      xlOnly: { min: '1280px' },
     },
     extend: {
       container: {
