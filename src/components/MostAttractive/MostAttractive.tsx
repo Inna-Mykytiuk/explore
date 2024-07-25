@@ -2,13 +2,14 @@
 
 import React, { useContext, useEffect } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 import { MyContext } from "@/context/AppContext";
+import BookTour from "@/utils/BookTour/BookTour";
 import HexagonText from "../HexagonText/HexagonText";
 import datas from "@/data/reasonData";
-import BookTour from "@/utils/BookTour/BookTour";
 
 const MostAttractive = () => {
   useEffect(() => {
@@ -45,14 +46,34 @@ const MostAttractive = () => {
     >
       <div className="container">
         <div className="text-center">
-          <h2 className="text-titleColor text-[76px] font-dancing text-center sm:text-start md:text-center leading-[60px] xl:leading-normal">
+          <motion.h2
+            className="text-titleColor text-[76px] font-dancing text-center sm:text-start md:text-center leading-[60px] xl:leading-normal"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.4 }}
+            transition={{ duration: 0.4 }}
+            variants={{
+              hidden: { opacity: 0, y: 100 },
+              visible: { opacity: 1, y: 0 },
+            }}
+          >
             You should visit
-          </h2>
-          <h2 className="text-[36px] md:text-[54px] text-white font-montserrat font-medium text-center sm:text-start md:text-center leading-[50px]">
+          </motion.h2>
+          <motion.h2
+            className="text-[36px] md:text-[54px] text-white font-montserrat font-medium text-center sm:text-start md:text-center leading-[50px]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.6 }}
+            transition={{ duration: 0.6 }}
+            variants={{
+              hidden: { opacity: 0, y: 100 },
+              visible: { opacity: 1, y: 0 },
+            }}
+          >
             Most Attractive Place
             <br />
             in {infos.name}
-          </h2>
+          </motion.h2>
         </div>
       </div>
 
@@ -144,7 +165,6 @@ const MostAttractive = () => {
             data-aos-delay="800"
             data-aos-duration="800"
           />
-
           <HexagonText
             alignment="left"
             text="Festivals play a crucial role in the cultural life of each country, with Indonesia celebrating events like Nyepi, Nepal observing Dashain and Tihar, and Thailand known for Songkran and Loy Krathong."

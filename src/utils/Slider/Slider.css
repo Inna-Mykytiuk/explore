@@ -40,7 +40,6 @@
 
 .swiper-slide.swiper-slide-prev,
 .swiper-slide.swiper-slide-next {
-  /* box-shadow: 0px 0px 50px 5px #000; */
   z-index: -1;
 }
 

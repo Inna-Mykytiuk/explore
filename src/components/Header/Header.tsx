@@ -1,32 +1,14 @@
 "use client";
 
 import React, { useContext } from "react";
-import "./Header.css";
-import { FaYoutube } from "react-icons/fa";
-import Slider from "@/utils/Slider/Slider";
-import { MyContext } from "@/context/AppContext";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
-const contentData = [
-  {
-    country: "Indonesia",
-    title: "Explore Indonesia",
-    description:
-      "Indonesia is an archipelago nation in Southeast Asia, comprising over 17,000 islands. It is known for its diverse cultures, languages, and vibrant landscapes, including beaches, volcanoes, and rainforests. The country has a rich history influenced by various civilizations and is the world's largest Muslim-majority nation.",
-  },
-  {
-    country: "Thailand",
-    title: "Explore Thailand",
-    description:
-      "Thailand is a Southeast Asian country famous for its tropical beaches, opulent royal palaces, ancient ruins, and ornate temples displaying figures of Buddha. The bustling capital, Bangkok, is known for its modern skyline juxtaposed with cultural landmarks. Thai cuisine, known for its balance of sweet, sour, salty, and spicy flavors, is celebrated worldwide.",
-  },
-  {
-    country: "Nepal",
-    title: "Explore Nepal",
-    description:
-      "Nepal is a landlocked country in South Asia, nestled in the Himalayas between China and India. It is renowned for its mountainous terrain, including Mount Everest, the world's highest peak. Nepal boasts a unique cultural heritage, with influences from Hinduism and Buddhism, and is known for its temples, festivals, and trekking routes.",
-  },
-];
+import { FaYoutube } from "react-icons/fa";
+import { MyContext } from "@/context/AppContext";
+import { contentData } from "@/data/contentData";
+import Slider from "@/utils/Slider/Slider";
+import "./Header.css";
 
 const Header = () => {
   const context = useContext(MyContext);
@@ -43,15 +25,35 @@ const Header = () => {
     if (country && title) {
       return (
         <>
-          <h1 className="text-[56px] leading-[56px] md:text-[96px] xl:text-[140px] text-white font-montserrat font-[800] md:leading-[84px] xl:leading-[140px]">
+          <motion.h1
+            className="text-[56px] leading-[56px] md:text-[96px] xl:text-[140px] text-white font-montserrat font-[800] md:leading-[84px] xl:leading-[140px]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.4 }}
+            transition={{ duration: 0.4 }}
+            variants={{
+              hidden: { opacity: 0, x: -100 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
             Explore <br />
             <span className={`country ${country}`} data-country={country}>
               {country}
             </span>
-          </h1>
-          <p className="text-white mt-[-10px] md:mt-[-40px] w-[95%] font-semibold">
+          </motion.h1>
+          <motion.p
+            className="text-white mt-[-10px] md:mt-[-40px] w-[95%] font-semibold"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.4 }}
+            transition={{ duration: 0.4 }}
+            variants={{
+              hidden: { opacity: 0, x: -100 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
             {description}
-          </p>
+          </motion.p>
         </>
       );
     }
@@ -88,9 +90,19 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="w-1/3 flex flex-col items-end justify-end relative smOnly:left-[260px] mdOnly:left-[400px] xl:top-[-70px] xlOnly:left-[70px]">
+          <motion.div
+            className="w-1/3 flex flex-col items-end justify-end relative smOnly:left-[260px] mdOnly:left-[400px] xl:top-[-70px] xlOnly:left-[70px]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: 100 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
             <Slider />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
