@@ -59,7 +59,7 @@ const MostAttractive = () => {
           >
             You should visit
           </motion.h2>
-          <motion.h2
+          <motion.h3
             className="text-[36px] md:text-[54px] text-white font-montserrat font-medium text-center sm:text-start md:text-center leading-[50px]"
             initial="hidden"
             whileInView="visible"
@@ -73,7 +73,7 @@ const MostAttractive = () => {
             Most Attractive Place
             <br />
             in {infos.name}
-          </motion.h2>
+          </motion.h3>
         </div>
       </div>
 

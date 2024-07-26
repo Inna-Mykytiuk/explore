@@ -1,9 +1,10 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import "./ViewPoint.css";
 
-import Image from "next/image";
 import { BiSolidCalendar } from "react-icons/bi";
 import { HiArrowLongRight } from "react-icons/hi2";
 
@@ -51,14 +52,34 @@ const ViewPoint = () => {
     <section className="w-full mb-[100px]" id="view-point">
       <div className="lgOnly:container">
         <div className="text-center">
-          <h2 className="text-titleColor text-[76px] font-dancing text-center  leading-[60px] xl:leading-normal">
+          <motion.h2
+            className="text-titleColor text-[76px] font-dancing text-center leading-[60px] xl:leading-normal"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.4 }}
+            transition={{ duration: 0.4 }}
+            variants={{
+              hidden: { opacity: 0, y: 100 },
+              visible: { opacity: 1, y: 0 },
+            }}
+          >
             View Point
-          </h2>
-          <h2 className="text-[36px] md:text-[54px] text-white font-montserrat font-medium text-center leading-[50px]">
+          </motion.h2>
+          <motion.h3
+            className="text-[36px] md:text-[54px] text-white font-montserrat font-medium text-center leading-[50px]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.6 }}
+            transition={{ duration: 0.6 }}
+            variants={{
+              hidden: { opacity: 0, y: 100 },
+              visible: { opacity: 1, y: 0 },
+            }}
+          >
             Discover Our Tourist
             <br />
             Viewpoint
-          </h2>
+          </motion.h3>
         </div>
 
         <div className="flex flex-col xl:flex-row justify-between items-center mt-[50px]">
@@ -94,7 +115,7 @@ const ViewPoint = () => {
 
                 {state === index && (
                   <p className="absolute top-[17px] right-0 text-[25px] font-semibold text-white flex  items-center gap-1 justify-center verticalText">
-                    <BiSolidCalendar />
+                    <BiSolidCalendar className="rotate-90" />
                     2/07
                   </p>
                 )}

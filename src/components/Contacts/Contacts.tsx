@@ -1,10 +1,12 @@
 "use client";
 
 import React, { useEffect } from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Image from "next/image";
 import ContactForm from "../ContactForm/ContactForm";
+
 import branchImg from "../../../public/pictures/branch.png";
 
 export default function Contacts() {
@@ -19,12 +21,32 @@ export default function Contacts() {
     >
       <div className="container ">
         <div className="text-center mb-[40px] md:mb-[80px]">
-          <h2 className="text-titleColor text-[76px] font-dancing text-center sm:text-start md:text-center leading-[60px] xl:leading-normal">
+          <motion.h2
+            className="text-titleColor text-[76px] font-dancing text-center sm:text-start md:text-center leading-[60px] xl:leading-normal"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.4 }}
+            transition={{ duration: 0.4 }}
+            variants={{
+              hidden: { opacity: 0, y: 100 },
+              visible: { opacity: 1, y: 0 },
+            }}
+          >
             Contacts
-          </h2>
-          <h2 className="text-[36px] md:text-[54px] text-white font-montserrat font-medium text-center sm:text-start md:text-center leading-[50px]">
+          </motion.h2>
+          <motion.h3
+            className="text-[36px] md:text-[54px] text-white font-montserrat font-medium text-center sm:text-start md:text-center leading-[50px]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.6 }}
+            transition={{ duration: 0.6 }}
+            variants={{
+              hidden: { opacity: 0, y: 100 },
+              visible: { opacity: 1, y: 0 },
+            }}
+          >
             Get in touch
-          </h2>
+          </motion.h3>
         </div>
         <div
           className="flex flex-col md:flex-row w-full relative
