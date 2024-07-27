@@ -90,19 +90,9 @@ const Header = () => {
             </div>
           </div>
 
-          <motion.div
-            className="w-1/3 flex flex-col items-end justify-end relative smOnly:left-[260px] mdOnly:left-[400px] xl:top-[-70px] xlOnly:left-[70px]"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
-            variants={{
-              hidden: { opacity: 0, x: 100 },
-              visible: { opacity: 1, x: 0 },
-            }}
-          >
+          <div className="w-1/3 flex flex-col items-end justify-end relative smOnly:left-[260px] mdOnly:left-[400px] xl:top-[-70px] xlOnly:left-[70px]">
             <Slider />
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
