@@ -9,9 +9,9 @@ export default function Home() {
     <>
       <Main />
       <MostAttractive />
-      {/* <ViewPoint />
+      <ViewPoint />
       <Contacts />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }
