@@ -52,7 +52,7 @@ const Slider = () => {
   ];
 
   return (
-    <div className="mr-14">
+    <div className="mr-0 sm:mr-14">
       <Swiper
         slidesPerView={1}
         keyboard={true}

@@ -26,7 +26,7 @@ const Header = () => {
       return (
         <>
           <motion.h1
-            className="text-[56px] leading-[56px] md:text-[96px] xl:text-[140px] text-white font-montserrat font-[800] md:leading-[84px] xl:leading-[140px]"
+            className="text-[56px] leading-[56px] md:text-[96px] xl:text-[128px] text-white font-montserrat font-[800] md:leading-[84px] xl:leading-[140px]"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.4 }}
@@ -90,7 +90,7 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="w-1/3 flex flex-col items-end justify-end relative smOnly:left-[260px] mdOnly:left-[400px] xl:top-[-70px] xlOnly:left-[70px]">
+          <div className="w-full flex flex-col items-end justify-end relative left-[-10px] lg:left-[-90px] xl:top-[-70px] xlOnly:left-[40px]">
             <Slider />
           </div>
         </div>
